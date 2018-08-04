@@ -71,7 +71,10 @@ public class NumberConverter {
                     }
                     continue;
                 } else {
-                    num = numbers.get(numStr);
+                    Integer result = numbers.get(numStr);
+                    if(result != null) {
+                        num = result;
+                    }
                     sum += num;
                     continue;
                 }
